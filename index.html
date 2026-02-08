@@ -152,13 +152,7 @@
 <!-- Hidden Audio -->
 <audio id="backgroundMusic" src="https://probablyshna.github.io/Community-Comfort-Drive-Progress/tunetank-jazz-cafe-music-348267.mp3" loop></audio>
 
-  const music = document.getElementById('backgroundMusic');
-const playButton = document.getElementById('playMusicButton');
-
-playButton.addEventListener('click', () => {
-    music.play();
-    playButton.style.display = 'none'; // hide button after clicking
-});
+ 
 
   <!-- FLOATING YARN -->
   <div class="yarn yarn0" style="left:5%; animation-delay:0s"></div>
@@ -235,6 +229,16 @@ playButton.addEventListener('click', () => {
     const donateLink = document.getElementById('donateLink');
     donateLink.href = 'https://www.paypal.com/donate?hosted_button_id=SMM984BDNRRCC';
   </script>
+
+  <script>
+  const music = document.getElementById('backgroundMusic');
+  const playButton = document.getElementById('playMusicButton');
+
+  playButton.addEventListener('click', () => {
+      music.play();
+      playButton.style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
